@@ -16,7 +16,7 @@ public class EmployeeDetails {
     private Long id;
     private String position;
     private double salary;
-    private Date joinDate;
+    private String joinDate;
     private String address;
 
 

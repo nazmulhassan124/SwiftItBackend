@@ -53,7 +53,7 @@ public class EmployeeService {
 
        public List<EmployeeInfo> getAllEmp() {
 
-        return employeeRepository.findAll();
+        return employeeRepository.allemployee();
     }
 
 //    public List<Object> getAllActiveEmployee() {

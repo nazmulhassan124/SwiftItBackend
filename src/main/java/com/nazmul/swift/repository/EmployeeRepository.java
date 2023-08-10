@@ -21,6 +21,11 @@ public interface EmployeeRepository  extends JpaRepository<EmployeeInfo , Long> 
     void softDelete(Boolean status, Long id);
 
 
+    // gor get All employee
+    @Query(value = " SELECT  *  FROM employee_info empinfo  WHERE empinfo.active_status='1'  "  , nativeQuery = true)
+    List<EmployeeInfo>  allemployee ();
+
+
 //    @Query(value = "SELECT*FROM employee_info t1 INNER JOIN  employee_details t2 ON t1.fK_emp_idetails_id=t2.id    WHERE  active_status='1' and emp_id =? ", nativeQuery = true)
 //   Employee getEmpById(Long id);
 
